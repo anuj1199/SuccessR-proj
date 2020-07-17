@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Internship</string>
+    <string name="first_slide_title">Business Transformation</string>
+    <string name="second_slide_title">Desired Job</string>
+    <string name="third_slide_title">Employee Attendance</string>
+    <string name="forth_slide_title">Suitable Candidate</string>
+    <string name="fifth_slide_title">All HR Services</string>
+    <string name="sixth_slide_title">Best Talent</string>
+    <string name="seventh_slide_title">Helping Hand</string>
+    <string name="eigth_slide_title">Understand Needs</string>
+    <string name="first_slide_desc">Bring quantum change to your organisation by subscribing to SuccessR HR services and reach new heights of success with SuccessR</string>
+    <string name="second_slide_desc">Formulate the best resume by subscribing to SuccessR and improve your CV from industry experts in HR.</string>
+    <string name="third_slide_desc">Our services include keeping a track of employee attendences. We will assist you with a time log on a day to day basis to keep a check on Employee Absenteeism and lateness in the organisation.</string>
+    <string name="forth_slide_desc">Facing difficulties in finding the right individual for the job ? Join us and we will help you by providing the most suitable candidate for the job.</string>
+    <string name="fifth_slide_desc">SuccessR provides best in class workforce solutions to organisations, colleges and individuals alike. We are your one stop shop for a gamut of high impact HR solutions to organisations and candidates seeking growth , performance and management.</string>
+    <string name="sixth_slide_desc">Sourcing the best talent, especially when a business is looking for a specific skillset in a particular field like the IT domain, can often seem to be an arduous task. Elite performers in this field can act as game-changers for any organization that is lucky enough to have them onboard</string>
+    <string name="seventh_slide_desc">SuccessR understands how crucial it is to find the right employee with the right skill sets who can contribute to success of your business.</string>
+    <string name="eigth_slide_desc">SuccessR understands how crucial it is to find the right employee with the right skill sets who can contribute to success of your business.</string>
+    <string name="success_title">Alert!!</string>
+    <string name="dummy_text">Please select one of the following</string>
+    <string name="intern">Intern</string>
+    <string name="employee">Employee</string>
+    <string name="employer">Employer</string>
+</resources>

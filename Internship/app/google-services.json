@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "610609202944",
+    "firebase_url": "https://internship-4defa.firebaseio.com",
+    "project_id": "internship-4defa",
+    "storage_bucket": "internship-4defa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:610609202944:android:1847dac04e69b46d1c15e5",
+        "android_client_info": {
+          "package_name": "com.vinu.internship"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "610609202944-pm28q0jh6b1jufmmm0kbl9f7e75rmhck.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0qDlcs74m01siikS19JLEyXwgrKJ1uDQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "610609202944-pm28q0jh6b1jufmmm0kbl9f7e75rmhck.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
