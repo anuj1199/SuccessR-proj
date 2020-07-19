@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     Button skipbtn;
     ImageView logo;
     TextView welcome,tagline,developer;
-    Animation bottomupanim,topdownanim,leftinanim,rightinanim;
+    Animation bottomupanim,fade,leftinanim,rightinanim;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,10 +28,10 @@ public class MainActivity extends AppCompatActivity {
         //tagline = findViewById(R.id.main_tagline);
         //developer = findViewById(R.id.textdeveloper);
         bottomupanim = AnimationUtils.loadAnimation(this,R.anim.bottom_upanim);
-        topdownanim = AnimationUtils.loadAnimation(this,R.anim.top_downanim);
+        fade = AnimationUtils.loadAnimation(this,R.anim.fade);
         leftinanim = AnimationUtils.loadAnimation(this,R.anim.left_in);
         rightinanim = AnimationUtils.loadAnimation(this,R.anim.right_in);
-         logo.setAnimation(topdownanim);
+         logo.setAnimation(fade);
          //welcome.setAnimation(leftinanim);
          //tagline.setAnimation(rightinanim);
          //developer.setAnimation(leftinanim);
