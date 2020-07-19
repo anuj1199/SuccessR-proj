@@ -77,7 +77,7 @@ public class employeelogin extends AppCompatActivity {
                                             if (firebaseAuth.getCurrentUser().isEmailVerified()) {
                                                 dialoglogin.dismiss();
                                                 Toast.makeText(employeelogin.this, "Logged In successfully", Toast.LENGTH_SHORT).show();
-                                                Intent intent = new Intent(employeelogin.this, employeer_success.class);
+                                                Intent intent = new Intent(employeelogin.this, employee_success.class);
                                                 startActivity(intent);
                                                 finish();
                                             }
