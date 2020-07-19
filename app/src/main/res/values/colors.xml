@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#8BC34A</color>
-    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#292F36</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="colorred">#F76117</color>
     <color name="colorwhite">#FFFFFF</color>
@@ -9,4 +9,10 @@
     <color name="colorsuccess">#4BB543</color>
     <color name="colorwarning">#FFCC00</color>
     <color name="header_background">#E2F3BA</color>
+    <!-- color for the application  -->
+    <color name="darkBackground">#292F36</color>
+    <color name="lightBackground">#F7FFF7</color>
+    <color name="cyan">#4ECDC4</color>
+    <color name="peachRed">#FF6B6B</color>
+    <color name="yellow">#FFE66D</color>
 </resources>
