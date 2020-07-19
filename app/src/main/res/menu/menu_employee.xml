@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#91F7DE">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_jobs_upload"
+            android:title="Jobs"
+            android:icon="@drawable/jobs_icon">
+        </item>
+        <item
+            android:id="@+id/nav_internships_upload"
+            android:title="Internships"
+            android:icon="@drawable/intern_icon">
+        </item>
+        <item
+            android:id="@+id/nav_notifications_upload"
+            android:title="Notifications"
+            android:icon="@drawable/ic_notifications">
+        </item>
+    </group>
+    <item android:title="Jobs">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_jobs"
+                    android:title="Jobs"
+                    android:icon="@drawable/jobs_icon">
+                </item>
+                <item
+                    android:id="@+id/nav_applied_jobs"
+                    android:title="Applied Jobs"
+                    android:icon="@drawable/applied_jobs">
+                </item>
+                <item
+                    android:id="@+id/nav_search_jobs"
+                    android:title="Search Jobs"
+                    android:icon="@drawable/menu_search_icon">
+                </item>
+            </group>
+        </menu>
+    </item>
+    <item android:title="Interns">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_internship"
+                    android:title="Internship"
+                    android:icon="@drawable/intern_icon">
+                </item>
+                <item
+                    android:id="@+id/nav_applied_internships"
+                    android:title="Applied Internships"
+                    android:icon="@drawable/applied_jobs">
+                </item>
+                <item
+                    android:id="@+id/nav_search_internships"
+                    android:title="Search_internships"
+                    android:icon="@drawable/menu_search_icon">
+                </item>
+
+            </group>
+        </menu>
+    </item>
+    <item android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_login"
+                    android:title="Login"
+                    android:icon="@drawable/menu_login_icon">
+                </item>
+                <item
+                    android:id="@+id/nav_profile"
+                    android:title="Profile"
+                    android:icon="@drawable/menu_profile_icon">
+                </item>
+                <item
+                    android:id="@+id/nav_all_logout"
+                    android:title="Log out"
+                    android:icon="@drawable/menu_logout_icon">
+                </item>
+
+            </group>
+
+
+        </menu>
+
+    </item>
+    <item android:title="About us">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item
+                    android:id="@+id/nav_share"
+                    android:title="Share"
+                    android:icon="@drawable/menu_share_icon">
+                </item>
+                <item
+                    android:id="@+id/nav_rate_us"
+                    android:title="Rate Us"
+                    android:icon="@drawable/menu_rateus_icon">
+                </item>
+                <item
+                    android:id="@+id/action_info"
+                    android:icon="@drawable/ic_info"
+                    android:title="Info"
+                    app:showAsAction="always" />
+            </group>
+        </menu>
+    </item>
+</menu>

@@ -123,8 +123,6 @@ public class employeer_success extends AppCompatActivity implements NavigationVi
                                         }
         );
     }
-
-
     @Override
     public void onBackPressed() {
         if(drawrerlayout.isDrawerVisible(GravityCompat.START))
@@ -135,7 +133,6 @@ public class employeer_success extends AppCompatActivity implements NavigationVi
         {
             super.onBackPressed();
         }
-
     }
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
