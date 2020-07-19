@@ -202,7 +202,7 @@ public class OnBoardingScreen extends AppCompatActivity {
             }
 
             else
-            {   animation = AnimationUtils.loadAnimation(OnBoardingScreen.this,R.anim.bottom_anim);
+            {   animation = AnimationUtils.loadAnimation(OnBoardingScreen.this,R.anim.fade);
                 letsgetstarted.setAnimation(animation);
                 letsgetstarted.setVisibility(View.VISIBLE);
             }

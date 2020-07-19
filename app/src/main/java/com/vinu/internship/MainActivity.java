@@ -13,7 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    private static int splash_screen_time = 2000;
+    private static int splash_screen_time = 1800;
     Button skipbtn;
     ImageView logo;
     TextView welcome,tagline,developer;
@@ -24,17 +24,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         skipbtn = findViewById(R.id.skip_btn_main);
         logo = findViewById(R.id.imageView_logo);
-        welcome = findViewById(R.id.textViewwelcome);
-        tagline = findViewById(R.id.main_tagline);
-        developer = findViewById(R.id.textdeveloper);
+        //welcome = findViewById(R.id.textViewwelcome);
+        //tagline = findViewById(R.id.main_tagline);
+        //developer = findViewById(R.id.textdeveloper);
         bottomupanim = AnimationUtils.loadAnimation(this,R.anim.bottom_upanim);
         topdownanim = AnimationUtils.loadAnimation(this,R.anim.top_downanim);
         leftinanim = AnimationUtils.loadAnimation(this,R.anim.left_in);
         rightinanim = AnimationUtils.loadAnimation(this,R.anim.right_in);
          logo.setAnimation(topdownanim);
-         welcome.setAnimation(leftinanim);
-         tagline.setAnimation(rightinanim);
-         developer.setAnimation(leftinanim);
+         //welcome.setAnimation(leftinanim);
+         //tagline.setAnimation(rightinanim);
+         //developer.setAnimation(leftinanim);
          skipbtn.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View view) {
