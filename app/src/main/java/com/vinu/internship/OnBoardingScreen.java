@@ -54,7 +54,7 @@ public class OnBoardingScreen extends AppCompatActivity {
                 ((Button) view.findViewById(R.id.buttonemployee)).setText(getResources().getString(R.string.employee));
                 ((Button) view.findViewById(R.id.buttonintern)).setText(getResources().getString(R.string.intern));
                 ((Button) view.findViewById(R.id.buttonemployerr)).setText(getResources().getString(R.string.employer));
-                ((ImageView) view.findViewById(R.id.imageicon)).setImageResource(R.drawable.ic_warning);
+                //((ImageView) view.findViewById(R.id.imageicon)).setImageResource(R.drawable.ic_warning);
                 final AlertDialog alertDialog = builder.create();
                 view.findViewById(R.id.buttonemployee).setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -103,7 +103,7 @@ public class OnBoardingScreen extends AppCompatActivity {
                 ((Button) view.findViewById(R.id.buttonemployee)).setText(getResources().getString(R.string.employee));
                 ((Button) view.findViewById(R.id.buttonemployerr)).setText(getResources().getString(R.string.employer));
                 ((Button) view.findViewById(R.id.buttonintern)).setText(getResources().getString(R.string.intern));
-                ((ImageView) view.findViewById(R.id.imageicon)).setImageResource(R.drawable.ic_warning);
+                //((ImageView) view.findViewById(R.id.imageicon)).setImageResource(R.drawable.ic_warning);
                 final AlertDialog alertDialog = builder.create();
                 view.findViewById(R.id.buttonemployee).setOnClickListener(new View.OnClickListener() {
                     @Override
