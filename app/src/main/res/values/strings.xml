@@ -28,4 +28,6 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="log_in">Log in</string>
+    <string name="skip">Skip</string>
+    <string name="let_s_get_started">Let\'s Get Started</string>
 </resources>

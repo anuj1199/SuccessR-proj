@@ -19,12 +19,12 @@
         android:id="@+id/skip_btn_onboarding"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Skip"
-        android:textColor="#fff"
+        android:text="@string/skip"
+        android:textColor="@color/darkBackground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:padding="10dp"
-        android:background="#00000000"
+        android:background="@android:color/transparent"
         android:drawableEnd="@drawable/skip_icon">
     </Button>
 
@@ -32,7 +32,7 @@
         android:id="@+id/relativelayout"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:background="#0A1003"
+        android:background="@color/lightBackground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,7 +41,10 @@
             android:id="@+id/get_started_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Let's Get Started"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textColor="@color/lightBackground"
+            android:text="@string/let_s_get_started"
             android:visibility="invisible"
             android:background="@drawable/button_neutral_background">
         </Button>
@@ -51,6 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:paddingBottom="20dp"
+            android:layout_marginStart="15dp"
             android:orientation="horizontal">
         </LinearLayout>
         <Button
@@ -58,11 +62,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:paddingBottom="30dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="@color/darkBackground"
             android:background="#00000000"
-            android:drawableEnd="@drawable/next_btn_icon"
-            android:drawableRight="@drawable/next_btn_icon">
+            android:drawableEnd="@drawable/next_btn_icon">
         </Button>
 
 

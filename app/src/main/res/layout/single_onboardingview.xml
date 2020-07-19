@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:background="#0A1003"
+    android:background="@color/lightBackground"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -14,7 +14,7 @@
         android:layout_height="200dp"
         android:layout_marginTop="30dp"
         android:padding="5dp"
-        app:civ_border_color="#EC513C"
+        app:civ_border_color="@color/colorred"
         app:civ_border_overlay="true"
         app:civ_border_width="4dp"
 
@@ -29,34 +29,34 @@
 
     <TextView
         android:id="@+id/slider_heading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="365dp"
+        android:layout_height="54dp"
         android:layout_marginStart="174dp"
         android:layout_marginEnd="178dp"
-        android:fontFamily="@font/aclonica"
+        android:fontFamily="@font/heading"
         android:gravity="center"
         android:text="TextView"
         android:textColor="@color/colorred"
-        android:textSize="30sp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/slider_image"
-        app:layout_constraintVertical_bias="0.196" />
+        app:layout_constraintVertical_bias="0.195" />
 
     <TextView
         android:id="@+id/slider_desc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_width="349dp"
+        android:layout_height="134dp"
+        android:gravity="center_horizontal"
         android:padding="0dp"
         android:text="@string/first_slide_desc"
-        android:textColor="#7AB43C"
-        android:textSize="18sp"
+        android:textColor="@color/darkBackground"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/slider_heading"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.117" />
 </androidx.constraintlayout.widget.ConstraintLayout>
