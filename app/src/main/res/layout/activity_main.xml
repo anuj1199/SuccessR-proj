@@ -54,7 +54,7 @@
         android:id="@+id/main_tagline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_regular"
+        android:fontFamily="sans-serif"
         android:text="@string/one_stop_destination_n_for_all_hr_services"
         android:textColor="@color/lightBackground"
         android:textSize="25sp"
