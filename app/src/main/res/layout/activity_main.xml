@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/darkBackground"
+    android:background="#1C1C1C"
     tools:context=".MainActivity">
     <Button
         android:id="@+id/skip_btn_main"
@@ -22,19 +22,18 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imageView_logo"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:src="@drawable/logo"
+        android:layout_width="295dp"
+        android:layout_height="246dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/capture"
         app:civ_border_color="@android:color/transparent"
         app:civ_border_overlay="true"
         app:civ_border_width="4dp"
-        android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.112" />
+        app:layout_constraintVertical_bias="0.243" />
 
     <TextView
         android:id="@+id/textViewwelcome"
@@ -56,7 +55,7 @@
         android:id="@+id/main_tagline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_regular"
+        android:fontFamily="sans-serif"
         android:text="@string/one_stop_destination_n_for_all_hr_services"
         android:textColor="@color/lightBackground"
         android:textSize="25sp"
