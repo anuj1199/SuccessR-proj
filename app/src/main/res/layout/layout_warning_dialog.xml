@@ -48,7 +48,7 @@
         <TextView
             android:id="@+id/textmessage"
             android:layout_width="269dp"
-            android:layout_height="35dp"
+            android:layout_height="34dp"
             android:layout_marginBottom="40dp"
             android:fontFamily="@font/heading"
             android:gravity="center"
