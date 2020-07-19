@@ -1,5 +1,4 @@
 package com.vinu.internship;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -34,7 +33,6 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.vinu.internship.SliderAdapter;
-
 public class employeer_success extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     static final float END_SCALE = 07f;
     RecyclerView notificationrecycler;
@@ -47,7 +45,6 @@ public class employeer_success extends AppCompatActivity implements NavigationVi
     DatabaseReference Dataref;
     FirebaseRecyclerOptions<Notification> options;
     FirebaseRecyclerAdapter<Notification,MyViewHolderNotification> adapter;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -85,7 +82,6 @@ public class employeer_success extends AppCompatActivity implements NavigationVi
         adapter.startListening();
         notificationrecycler.setAdapter(adapter);
         navigationdrawrer();
-
     }
     private void navigationdrawrer()
     {

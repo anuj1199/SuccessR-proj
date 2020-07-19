@@ -41,7 +41,7 @@ public class employeersignup extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_employeersignup);
-        login = findViewById(R.id.loginsignup_employeer);
+        login = findViewById(R.id.loginsignup_employee);
         Signup = findViewById(R.id.signupbutton_employer_signup);
         firstname = findViewById(R.id.firstname_employeer);
         lastname = findViewById(R.id.lastname_employeer);

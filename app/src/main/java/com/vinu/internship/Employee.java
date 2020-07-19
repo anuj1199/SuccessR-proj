@@ -1,10 +1,9 @@
 package com.vinu.internship;
-public class Employeer
-{
+public class Employee {
     private String Firstname,Lastname,Emailaddress,Phoneno,Password;
-    public Employeer() {
-    }
-    public Employeer(String firstname, String lastname, String EMId, String phoneno,String password)
+    public Employee() {
+}
+    public Employee(String firstname, String lastname, String EMId, String phoneno,String password)
     {
         this.Firstname = firstname;
         this.Lastname = lastname;
@@ -43,3 +42,4 @@ public class Employeer
         Password = password;
     }
 }
+

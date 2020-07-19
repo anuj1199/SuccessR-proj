@@ -8,8 +8,6 @@
     android:orientation="vertical"
     android:background="#A4E78C"
     android:padding="20dp">
-
-
     <com.github.ybq.android.spinkit.SpinKitView
         android:id="@+id/imageprogress"
         android:layout_width="wrap_content"
@@ -17,8 +15,6 @@
         android:visibility="gone"
         style="@style/SpinKitView.ChasingDots">
     </com.github.ybq.android.spinkit.SpinKitView>
-
-
     <TextView
         android:id="@+id/slogan_name"
         android:layout_width="wrap_content"
@@ -34,20 +30,17 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="10dp">
-
         <com.github.ybq.android.spinkit.SpinKitView
             android:id="@+id/pbr"
             android:visibility="gone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/SpinKitView.Large.DoubleBounce">
-
         </com.github.ybq.android.spinkit.SpinKitView>
     </RelativeLayout>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -62,14 +55,12 @@
                 android:visibility="gone"
                 style="@style/SpinKitView.Large.Wave">
             </com.github.ybq.android.spinkit.SpinKitView>
-
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/firstname_employeer"
                 android:hint="  First Name"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
-
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:drawableStart="@drawable/usicon"
@@ -83,7 +74,6 @@
                 android:id="@+id/lastname_employeer"
                 android:hint="  Last Name"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
-
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:drawableStart="@drawable/usicon"
@@ -97,7 +87,6 @@
                 android:id="@+id/emailaddress_employeer"
                 android:hint="  Email-Address"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
-
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:drawableStart="@drawable/emicon"
@@ -111,7 +100,6 @@
                 android:id="@+id/phonenosg_employeer"
                 android:hint="  Phone no"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
-
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:drawableStart="@drawable/phicon"
@@ -126,7 +114,6 @@
                 android:hint="  Password"
                 app:passwordToggleEnabled="true"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
-
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:drawableStart="@drawable/passicon"
@@ -141,16 +128,14 @@
                 android:hint="  Confirm Password"
                 app:passwordToggleEnabled="true"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/passicon"
                     android:inputType="textPassword"/>
             </com.google.android.material.textfield.TextInputLayout>
-
             <Button
-                android:id="@+id/signupbutton_employeer"
+                android:id="@+id/signupbutton_employee"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="140dp"
@@ -162,9 +147,8 @@
                 android:onClick="registerUser"
                 android:text="Sign Up"
                 android:textColor="#fff" />
-
             <Button
-                android:id="@+id/loginsignup_employeer"
+                android:id="@+id/loginsignup_employee"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
@@ -173,7 +157,6 @@
                 android:elevation="0dp"
                 android:text="Already Registered ? Login"
                 android:textColor="#000"/>
-
         </LinearLayout>
     </ScrollView>
 
