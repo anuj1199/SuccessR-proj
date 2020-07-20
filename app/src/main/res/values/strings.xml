@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Internship</string>
-    <string name="first_slide_title">Business Transformation</string>
+    <string name="first_slide_title">Business Transformations</string>
     <string name="second_slide_title">Desired Job</string>
     <string name="third_slide_title">Employee Attendance</string>
     <string name="forth_slide_title">Suitable Candidate</string>

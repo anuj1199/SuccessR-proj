@@ -168,6 +168,10 @@ public class InternSuccess extends AppCompatActivity implements NavigationView.O
                 Intent internships = new Intent(InternSuccess.this,uploadesinternships.class);
                 startActivity(internships);
                 break;
+            case R.id.nav_resume:
+                Intent resume= new Intent(InternSuccess.this, resume.class);
+                startActivity(resume);
+                break;
         }
         return true;
     }
