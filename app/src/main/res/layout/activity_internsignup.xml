@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".internsignup"
     android:orientation="vertical"
-    android:background="#A4E78C"
+    android:background="@color/lightBackground"
     android:padding="20dp">
 
 
@@ -23,12 +23,14 @@
         android:id="@+id/slogan_name_intern"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="70dp"
+        android:gravity="center"
+        android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:fontFamily="@font/aclonica"
+        android:fontFamily="@font/heading"
         android:text="Please SignUp Here"
-        android:textColor="#4E4D4D"
+        android:textColor="@color/darkBackground"
         android:textSize="25sp" />
+
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -72,6 +74,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
+                    android:fontFamily="@font/montserrat_regular"
                     android:drawableStart="@drawable/usicon"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
@@ -86,6 +89,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
+                    android:fontFamily="@font/montserrat_regular"
                     android:drawableStart="@drawable/usicon"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
@@ -100,6 +104,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
+                    android:fontFamily="@font/montserrat_regular"
                     android:drawableStart="@drawable/emicon"
                     android:layout_height="wrap_content"
                     android:inputType="textEmailAddress"
@@ -114,6 +119,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
+                    android:fontFamily="@font/montserrat_regular"
                     android:drawableStart="@drawable/phicon"
                     android:layout_height="wrap_content"
                     android:inputType="number"
@@ -156,23 +162,24 @@
                 android:layout_marginLeft="140dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
-                android:background="#000"
-                android:fontFamily="@font/aclonica"
+                android:background="@color/darkBackground"
+                android:fontFamily="@font/heading"
                 android:gravity="center"
                 android:onClick="registerUser"
-                android:text="Sign Up"
-                android:textColor="#fff" />
+                android:text="@string/sign_up"
+                android:textColor="@color/lightBackground" />
 
             <Button
                 android:id="@+id/loginsignup_intern"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right"
+                android:layout_gravity="end"
                 android:layout_margin="5dp"
-                android:background="#00000000"
+                android:fontFamily="@font/heading"
+                android:background="@android:color/transparent"
                 android:elevation="0dp"
-                android:text="Already Registered ? Login"
-                android:textColor="#000"/>
+                android:text="@string/already_registered_login"
+                android:textColor="@color/darkBackground"/>
 
         </LinearLayout>
     </ScrollView>

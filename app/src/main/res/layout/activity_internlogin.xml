@@ -6,29 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".Internlogin"
     android:orientation="vertical"
-    android:background="#A4E78C"
+    android:background="@color/lightBackground"
     android:padding="20dp">
 
     <TextView
         android:id="@+id/logo_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/aclonica"
-        android:text="Hello user, Welcome Back To SuccessR"
-        android:textColor="#000"
-        android:textSize="30sp"
+        android:fontFamily="@font/heading"
+        android:text="@string/welcome_back_to_successr"
+        android:textColor="@color/darkBackground"
+        android:textSize="24sp"
         android:transitionName="logo_text"
-        tools:layout_editor_absoluteX="-4dp"
-        tools:layout_editor_absoluteY="31dp" />
+        tools:layout_editor_absoluteY="31dp"
+        tools:ignore="MissingConstraints"/>
 
     <TextView
         android:id="@+id/slogan_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign In to continue"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/sign_in_to_continue"
+        android:textColor="@color/peachRed"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
-        tools:layout_editor_absoluteX="20dp" />
+        app:layout_constraintTop_toBottomOf="@+id/logo_name"
+        tools:ignore="MissingConstraints" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/slogan_name"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:fontFamily="@font/montserrat_regular"-->
+<!--        android:text="@string/sign_in_to_continue"-->
+<!--        android:textSize="18sp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/logo_name"-->
+<!--        app:layout_constraintVertical_bias="0.566"-->
+<!--        tools:ignore="MissingConstraints"-->
+<!--        tools:layout_editor_absoluteX="3dp" />-->
 
     <LinearLayout
         android:id="@+id/linearLayout3"
@@ -37,20 +55,22 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo_name">
+        app:layout_constraintTop_toBottomOf="@+id/logo_name"
+        app:layout_constraintVertical_bias="0.805">
 
         <com.google.android.material.textfield.TextInputLayout
 
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="  Email-Address">
+            android:hint="@string/email">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/emailaddresslg_intern"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/emicon"
+                android:fontFamily="@font/montserrat_regular"
                 android:drawablePadding="10dp"/>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -59,7 +79,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="  Password"
+            android:hint="@string/password"
             app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -85,48 +105,51 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="5dp"
-            android:background="#00000000"
+            android:background="@android:color/transparent"
             android:elevation="0dp"
-            android:text="Reset Password?" />
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/reset_password" />
 
         <Button
             android:id="@+id/loginbtn_intern"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="140dp"
+            android:layout_marginStart="140dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:background="@drawable/dialog_background"
-            android:fontFamily="@font/aclonica"
+            android:fontFamily="@font/heading"
             android:gravity="center"
-            android:text="Log in"
-            android:textColor="#fff" />
+            android:text="@string/log_in"
+            android:textColor="@color/lightBackground" />
 
         <Button
             android:id="@+id/signup_intern_loginpage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="right"
+            android:layout_gravity="end"
             android:layout_margin="5dp"
-            android:background="#00000000"
+            android:fontFamily="@font/montserrat_regular"
+            android:background="@android:color/transparent"
             android:elevation="0dp"
-            android:text="New User?     SIGN UP"
-            android:textColor="#000" />
+            android:text="@string/new_user_sign_up"
+            android:textColor="@color/darkBackground" />
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:gravity="center">
             <com.google.android.gms.common.SignInButton
                 android:id="@+id/sign_in_button"
-                android:layout_width="wrap_content"
+                android:layout_width="158dp"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true" />
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_marginLeft="80dp"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:src="@drawable/facebooklogo">
-        </de.hdodenhof.circleimageview.CircleImageView>
+                app:buttonSize="standard"
+                app:colorScheme="dark"/>
+<!--        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--            android:layout_marginLeft="80dp"-->
+<!--            android:layout_width="80dp"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:src="@drawable/facebooklogo">-->
+<!--        </de.hdodenhof.circleimageview.CircleImageView>-->
         </LinearLayout>
 
         <TextView

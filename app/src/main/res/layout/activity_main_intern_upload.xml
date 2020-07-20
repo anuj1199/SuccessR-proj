@@ -29,7 +29,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_regular"
+        android:fontFamily="@font/heading"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.332"
@@ -40,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/ic_notifications"
-            android:fontFamily="@font/aclonica"
+            android:fontFamily="@font/montserrat_regular"
             android:hint="Enter the InternShip Field"
             android:inputType="textPersonName" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -51,7 +51,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/aclonica"
+        android:fontFamily="@font/heading"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.415"
@@ -62,7 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/ic_notifications"
-            android:fontFamily="@font/aclonica"
+            android:fontFamily="@font/montserrat_regular"
             android:hint="last_date_to_apply"
             android:inputType="textPersonName" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -72,7 +72,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/aclonica"
+        android:fontFamily="@font/heading"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.499"
@@ -83,7 +83,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/ic_notifications"
-            android:fontFamily="@font/aclonica"
+            android:fontFamily="@font/montserrat_regular"
             android:hint="Qualification"
             android:inputType="textPersonName" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -94,7 +94,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/aclonica"
+        android:fontFamily="@font/heading"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.583"
@@ -105,20 +105,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/ic_notifications"
-            android:fontFamily="@font/aclonica"
+            android:fontFamily="@font/montserrat_regular"
             android:hint="no of vacancies"
             android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/upload_intern_btn"
-        android:layout_width="154dp"
+        android:layout_width="200dp"
         android:layout_height="59dp"
         android:background="@drawable/dialog_background"
-        android:fontFamily="@font/aclonica"
-        android:text="upload_intern"
+        android:fontFamily="@font/heading"
+        android:text="upload internship"
         android:textColor="@color/lightBackground"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
