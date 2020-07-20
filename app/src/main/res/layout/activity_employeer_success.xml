@@ -11,7 +11,7 @@
         android:id="@+id/navigation_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorwhite"
+        android:background="@color/lightBackground"
         android:layout_gravity="start"
         android:theme="@style/Navigation_Theme"
         app:headerLayout="@layout/menu_header"
@@ -22,8 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/constraintlayout"
-        android:background="#DBE7F8">
-
+        android:background="@color/lightBackground">
 
 
         <ImageView
@@ -38,7 +37,7 @@
             app:layout_constraintHorizontal_bias="0.041"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.053" />
+            app:layout_constraintVertical_bias="0.941" />
 
         <TextView
 
@@ -46,11 +45,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:fontFamily="@font/aclonica"
-            android:paddingLeft="70dp"
-            android:text="One step solutions for all employment services"
-            android:textColor="#991911"
-            android:textSize="20sp"
+            android:fontFamily="@font/heading"
+            android:paddingStart="60dp"
+            android:text="@string/one_step_solution_for_all_employment_services"
+            android:textColor="@color/colorred"
+            android:textSize="22sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.836"
