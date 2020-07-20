@@ -11,7 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ViewActivityIntern"></activity>
+        <activity android:name=".resume_preview"></activity>
+        <activity android:name=".resumeupdate" />
+        <activity android:name=".resume" />
+        <activity android:name=".ViewActivityIntern" />
         <activity android:name=".uploadesinternships" />
         <activity android:name=".MainActivityInternUpload" />
         <activity android:name=".employee_success" />
