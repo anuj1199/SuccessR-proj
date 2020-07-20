@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:openDrawer="start"
-    android:id="@+id/drawer_layout">
+    tools:openDrawer=""
+    android:id="@+id/drawer_layout_intern">
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation_view"
@@ -69,7 +69,7 @@
 
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/notification_recycler"
+                android:id="@+id/notification_recycler_intern"
                 android:layout_width="match_parent"
                 android:layout_height="240dp"
                 android:layout_marginLeft="10dp"

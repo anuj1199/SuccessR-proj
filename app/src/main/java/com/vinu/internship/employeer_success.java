@@ -169,6 +169,10 @@ public class employeer_success extends AppCompatActivity implements NavigationVi
                 Intent job = new Intent(employeer_success.this,uploadjob.class);
                 startActivity(job);
                 break;
+            case R.id.nav_internships_upload:
+                Intent internships = new Intent(employeer_success.this,MainActivityInternUpload.class);
+                startActivity(internships);
+                break;
         }
         return true;
     }
