@@ -1,59 +1,60 @@
 package com.vinu.internship;
 
-public class Intern
-{
-    private String Firstname,Lastname,Emailaddress,Phoneno,Password;
+public class Intern {
+    private String Field;
+    private String LastDate;
+    private String Qualification;
+    private String UploadDate;
+    private String Vacancy;
+
+    public Intern(String field, String lastDate, String qualification, String uploadDate, String vacancy) {
+        Field = field;
+        LastDate = lastDate;
+        Qualification = qualification;
+        UploadDate = uploadDate;
+        Vacancy = vacancy;
+    }
 
     public Intern() {
     }
 
-    public Intern(String firstname, String lastname, String EMId, String phoneno,String password)
-    {
-        this.Firstname = firstname;
-        this.Lastname = lastname;
-        this.Emailaddress = EMId;
-        this.Phoneno = phoneno;
-        this.Password = password;
+    public String getField() {
+        return Field;
     }
 
-    public String getFirstname() {
-        return Firstname;
+    public void setField(String field) {
+        Field = field;
     }
 
-    public void setFirstname(String firstname) {
-        Firstname = firstname;
+    public String getLastDate() {
+        return LastDate;
     }
 
-    public String getLastname() {
-        return Lastname;
+    public void setLastDate(String lastDate) {
+        LastDate = lastDate;
     }
 
-    public void setLastname(String lastname) {
-        Lastname = lastname;
+    public String getQualification() {
+        return Qualification;
     }
 
-    public String getEmailaddress() {
-        return Emailaddress;
+    public void setQualification(String qualification) {
+        Qualification = qualification;
     }
 
-    public void setEmailaddress(String EMId) {
-        Emailaddress = EMId;
+    public String getUploadDate() {
+        return UploadDate;
     }
 
-    public String getPhoneno() {
-        return Phoneno;
+    public void setUploadDate(String uploadDate) {
+        UploadDate = uploadDate;
     }
 
-    public void setPhoneno(String phoneno) {
-        Phoneno = phoneno;
+    public String getVacancy() {
+        return Vacancy;
     }
 
-    public String getPassword() {
-        return Password;
-    }
-
-    public void setPassword(String password) {
-        Password = password;
+    public void setVacancy(String vacancy) {
+        Vacancy = vacancy;
     }
 }
-
