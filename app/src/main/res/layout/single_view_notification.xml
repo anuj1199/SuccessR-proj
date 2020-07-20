@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     app:layout_constraintCircleRadius="30dp"
-    android:background="#00000000"
+    android:background="@android:color/transparent"
     android:layout_width="match_parent"
     android:layout_height="250dp">
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -16,16 +16,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/aclonica"
+            android:fontFamily="@font/heading"
             android:gravity="center_horizontal"
-            android:text="Important Notifications!!"
-            android:textSize="20sp"
+            android:text="@string/important_notifications"
+            android:textSize="22sp"
+            android:textColor="@color/colorred"
             app:layout_constraintBottom_toBottomOf="@+id/slider_notify"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.033"></TextView>
+            app:layout_constraintVertical_bias="0.033" />
 
         <androidx.cardview.widget.CardView
         android:id="@+id/slider_notify"
@@ -35,7 +36,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
-        android:background="#F5F2C3"
+        android:background="@color/lightBackground"
         android:layout_marginTop="50dp"
         app:cardCornerRadius="20dp"
         >
@@ -44,7 +45,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_marginTop="0dp"
-                android:background="#EFE009"
+                android:background="@color/yellow"
                 android:elevation="30dp">
 
                 <ImageView
@@ -53,22 +54,22 @@
                     android:src="@drawable/back_icon"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_bias="0.043"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.012"></ImageView>
+                    app:layout_constraintVertical_bias="0.011" />
 
                 <TextView
                     android:id="@+id/title_single_view_notification"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/carter_one"
+                    android:fontFamily="@font/heading"
                     android:gravity="center"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
                     android:text="Status"
-                    android:textColor="#010710"
-                    android:textSize="20sp"
+                    android:textColor="@color/darkBackground"
+                    android:textSize="18sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.464"
@@ -83,14 +84,14 @@
                     android:layout_marginTop="30dp"
                     android:layout_marginBottom="1dp"
                     android:drawablePadding="10dp"
-                    android:fontFamily="serif"
+                    android:fontFamily="@font/montserrat_regular"
                     android:padding="20dp"
                     android:paddingLeft="10dp"
                     android:paddingTop="10dp"
                     android:paddingRight="10dp"
-                    android:text="Name"
-                    android:textSize="10sp"
-                    android:textColor="#7E1AEC"
+                    android:text="@string/name"
+                    android:textSize="15sp"
+                    android:textColor="@color/darkBackground"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -103,12 +104,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Date:"
-                    android:textStyle="bold"
+                    android:fontFamily="@font/heading"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.911"></TextView>
+                    app:layout_constraintVertical_bias="0.911" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

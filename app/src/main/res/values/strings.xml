@@ -41,4 +41,6 @@
     <string name="last_name">Last Name</string>
     <string name="phone_no">Phone no.</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="important_notifications">Important Notifications</string>
+    <string name="name">Name</string>
 </resources>
