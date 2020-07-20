@@ -198,7 +198,6 @@ public class employeelogin extends AppCompatActivity {
     private void signIn() {
         //getting the google signin intent
         Intent signInIntent = mGoogleSignInClient.getSignInIntent();
-
         //starting the activity for result
         startActivityForResult(signInIntent, RC_SIGN_IN);
 
