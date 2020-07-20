@@ -50,7 +50,6 @@ public class employeerlogin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_employeerlogin);
-
         login_btn = findViewById(R.id.loginbtn_employeer);
         employersignup_btn = findViewById(R.id.signup_employeer);
         email = findViewById(R.id.emailaddresslg_employeer);
@@ -71,7 +70,6 @@ public class employeerlogin extends AppCompatActivity {
                 String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
                 final String Emailid = email.getText().toString().trim();
                 String Password = password.getText().toString().trim();
-
                 if(TextUtils.isEmpty(Emailid))
                 {
                     email.setError("Email-Address can't be empty");
@@ -104,7 +102,6 @@ public class employeerlogin extends AppCompatActivity {
                                                 Intent intent = new Intent(employeerlogin.this, employeer_success.class);
                                                 startActivity(intent);
                                                 finish();
-
                                             }
                                             else if (!firebaseAuth.getCurrentUser().isEmailVerified()) {
                                                 notificationHelper.sendHighPriorityNotification("Verify Email","Hello Employeer,Please verify Your Mail-id First\n Verification link has been sent to:\n"+ Emailid,employeerlogin.class);
@@ -127,17 +124,14 @@ public class employeerlogin extends AppCompatActivity {
             }
         });
         mAuth = FirebaseAuth.getInstance();
-
         //Then we need a GoogleSignInOptions object
         //And we need to build it as below
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
                 .requestEmail()
                 .build();
-
         //Then we will get the GoogleSignInClient object from GoogleSignIn class
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
-
         //Now we will attach a click listener to the sign_in_button
         //and inside onClick() method we are calling the signIn() method that will open
         //google sign in intent
@@ -154,13 +148,11 @@ public class employeerlogin extends AppCompatActivity {
 
         //if the requestCode is the Google Sign In code that we defined at starting
         if (requestCode == RC_SIGN_IN) {
-
             //Getting the GoogleSignIn Task
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
             try {
                 //Google Sign In was successful, authenticate with Firebase
                 GoogleSignInAccount account = task.getResult(ApiException.class);
-
                 //authenticating with firebase
                 firebaseAuthWithGoogle(account);
             } catch (ApiException e) {
@@ -168,13 +160,10 @@ public class employeerlogin extends AppCompatActivity {
             }
         }
     }
-
     private void firebaseAuthWithGoogle(GoogleSignInAccount acct) {
         Log.d(TAG, "firebaseAuthWithGoogle:" + acct.getId());
-
         //getting the auth credential
         AuthCredential credential = GoogleAuthProvider.getCredential(acct.getIdToken(), null);
-
         //Now using firebase we are signing in the user here
         mAuth.signInWithCredential(credential)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -185,7 +174,6 @@ public class employeerlogin extends AppCompatActivity {
                             FirebaseUser user = mAuth.getCurrentUser();
                             Intent intent =new Intent(employeerlogin.this,employeer_success.class);
                             startActivity(intent);
-
                             Toast.makeText(employeerlogin.this, "User Signed In", Toast.LENGTH_SHORT).show();
                         } else {
                             // If sign in fails, display a message to the user.
