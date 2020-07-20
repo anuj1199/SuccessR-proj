@@ -36,7 +36,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
-        android:background="@color/lightBackground"
+        android:background="@android:color/transparent"
         android:layout_marginTop="50dp"
         app:cardCornerRadius="20dp"
         >
@@ -45,7 +45,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_marginTop="0dp"
-                android:background="@color/yellow"
+                android:background="@color/material_yellow"
                 android:elevation="30dp">
 
                 <ImageView
@@ -57,7 +57,7 @@
                     app:layout_constraintHorizontal_bias="0.043"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.011" />
+                    app:layout_constraintVertical_bias="0.033" />
 
                 <TextView
                     android:id="@+id/title_single_view_notification"
@@ -68,7 +68,7 @@
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
                     android:text="Status"
-                    android:textColor="@color/darkBackground"
+                    android:textColor="@android:color/black"
                     android:textSize="18sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -91,7 +91,7 @@
                     android:paddingRight="10dp"
                     android:text="@string/name"
                     android:textSize="15sp"
-                    android:textColor="@color/darkBackground"
+                    android:textColor="@android:color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -103,10 +103,13 @@
                     android:id="@+id/date_single_view_notification"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Date:"
                     android:fontFamily="@font/heading"
+                    android:textColor="@android:color/black"
+                    android:gravity="center"
+                    android:text="@string/date"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.463"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.911" />

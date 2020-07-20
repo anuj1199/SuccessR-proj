@@ -15,4 +15,5 @@
     <color name="cyan">#4ECDC4</color>
     <color name="peachRed">#FF6B6B</color>
     <color name="yellow">#FFE66D</color>
+    <color name="material_yellow">#ffe54c</color>
 </resources>
