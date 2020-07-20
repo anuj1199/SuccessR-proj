@@ -45,15 +45,14 @@ public class InternSuccess extends AppCompatActivity implements NavigationView.O
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_employeer_success
-        );
-        notificationrecycler = findViewById(R.id.notification_recycler);
+        setContentView(R.layout.activity_intern_success);
+        notificationrecycler = findViewById(R.id.notification_recycler_intern);
         notificationrecycler.setHasFixedSize(true);
         Dataref = FirebaseDatabase.getInstance().getReference().child("NOTIFICATION");
         notificationrecycler.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
         navigationView = findViewById(R.id.navigation_view);
         navigationView.setNavigationItemSelectedListener(this);
-        drawrerlayout = findViewById(R.id.drawer_layout);
+        drawrerlayout = findViewById(R.id.drawer_layout_intern);
         menuIcon = findViewById(R.id.menu_icon);
         contentView = findViewById(R.id.constraintlayout);
         firebaseAuth = FirebaseAuth.getInstance();
@@ -157,13 +156,17 @@ public class InternSuccess extends AppCompatActivity implements NavigationView.O
 
                         .show();
                 break;
-            case R.id.nav_notifications_upload:
+            case R.id.nav_notifications_intern:
                 Intent not = new Intent(InternSuccess.this,uploadnotification.class);
                 startActivity(not);
                 break;
-            case R.id.nav_jobs_upload:
-                Intent job = new Intent(InternSuccess.this,uploadjob.class);
+            case R.id.nav_jobs_intern:
+                Intent job = new Intent(InternSuccess.this,HomeActivityJob.class);
                 startActivity(job);
+                break;
+            case R.id.nav_internships_intern:
+                Intent internships = new Intent(InternSuccess.this,uploadesinternships.class);
+                startActivity(internships);
                 break;
         }
         return true;
