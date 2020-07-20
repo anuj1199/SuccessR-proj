@@ -69,7 +69,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/firstname_intern"
-                android:hint="@string/first_name"
+                android:hint="first_name"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -84,7 +84,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/lastname_intern"
-                android:hint="@string/last_name"
+                android:hint="last_name"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -114,7 +114,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/phoneno_intern"
-                android:hint="@string/phone_no"
+                android:hint="phone_no"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -144,7 +144,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/cnfrmpassword_intern"
-                android:hint="@string/confirm_password"
+                android:hint="confirm_password"
                 app:passwordToggleEnabled="true"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
@@ -165,7 +165,6 @@
                 android:background="@color/darkBackground"
                 android:fontFamily="@font/heading"
                 android:gravity="center"
-                android:onClick="registerUser"
                 android:text="@string/sign_up"
                 android:textColor="@color/lightBackground" />
 
