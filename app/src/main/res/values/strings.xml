@@ -40,4 +40,5 @@
     <string name="signup_here">Welcome Back To SuccessR</string>
     <string name="Job_Seeker">Job Seeker</string>
     <string name="Recruiter">Recriuter</string>
+    <string name="confirm_password">confirm_password</string>
 </resources>
