@@ -32,9 +32,9 @@ public class MainActivityInternUpload extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_intern_upload);
         field = findViewById(R.id.intern_field);
-        dateup = findViewById(R.id.last_date_intern);
+        dateup = findViewById(R.id.last_date_internship);
         qualification = findViewById(R.id.qualification);
         vacancy = findViewById(R.id.vacancies);
         upload_job = findViewById(R.id.upload_intern_btn);

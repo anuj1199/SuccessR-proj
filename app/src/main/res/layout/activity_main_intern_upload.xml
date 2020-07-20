@@ -58,7 +58,7 @@
         tools:layout_editor_absoluteX="0dp">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/last_date_intern"
+            android:id="@+id/last_date_internship"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/ic_notifications"

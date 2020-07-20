@@ -4,17 +4,17 @@
     android:background="#91F7DE">
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_jobs_upload"
+            android:id="@+id/nav_jobs_intern"
             android:title="Jobs"
             android:icon="@drawable/jobs_icon">
         </item>
         <item
-            android:id="@+id/nav_internships_upload"
+            android:id="@+id/nav_internships_intern"
             android:title="Internships"
             android:icon="@drawable/intern_icon">
         </item>
         <item
-            android:id="@+id/nav_notifications_upload"
+            android:id="@+id/nav_notifications_intern"
             android:title="Notifications"
             android:icon="@drawable/ic_notifications">
         </item>
