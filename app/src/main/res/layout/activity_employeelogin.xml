@@ -19,7 +19,8 @@
         android:textSize="24sp"
         android:transitionName="logo_text"
         tools:layout_editor_absoluteY="31dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:targetApi="lollipop" />
 
     <TextView
         android:id="@+id/slogan_name"
@@ -95,7 +96,8 @@
             android:background="@android:color/transparent"
             android:elevation="2dp"
             android:fontFamily="@font/montserrat_regular"
-            android:text="@string/reset_password" />
+            android:text="@string/reset_password"
+            tools:targetApi="lollipop" />
 
         <Button
             android:id="@+id/loginbtn"
@@ -120,33 +122,35 @@
             android:background="@android:color/transparent"
             android:elevation="0dp"
             android:text="@string/new_user_sign_up"
-            android:textColor="@color/darkBackground" />
+            android:textColor="@color/darkBackground"
+            tools:targetApi="lollipop" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
 
             <com.google.android.gms.common.SignInButton
                 android:id="@+id/sign_in_button"
-                android:layout_width="wrap_content"
+                android:layout_width="158dp"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true" />
+                app:colorScheme="dark"
+                app:buttonSize="standard"/>
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginLeft="80dp"
-                android:src="@drawable/facebooklogo" />
+            <!--            <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:layout_marginLeft="80dp"-->
+<!--                android:src="@drawable/facebooklogo" />-->
         </LinearLayout>
 
         <TextView
             android:id="@+id/attemptremaining"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="40dp"
-            android:text="No of attempts remaining"
-            android:textStyle="bold" />
+            android:layout_gravity="center"
+            android:paddingTop="7dp"
+            android:text="@string/no_of_attempts_remaining" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

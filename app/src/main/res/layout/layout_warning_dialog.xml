@@ -52,7 +52,7 @@
             android:layout_marginBottom="40dp"
             android:fontFamily="@font/heading"
             android:gravity="center"
-            android:textColor="@color/colorwhite"
+            android:textColor="@color/lightBackground"
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
