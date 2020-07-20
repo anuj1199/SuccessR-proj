@@ -36,4 +36,9 @@
     <string name="already_registered_login">Already Registered ? Login</string>
     <string name="sign_up">Sign up</string>
     <string name="one_step_solution_for_all_employment_services">One step solution for all employment services</string>
+    <string name="signup_here">SignUp Here</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone_no">Phone no.</string>
+    <string name="confirm_password">Confirm Password</string>
 </resources>
