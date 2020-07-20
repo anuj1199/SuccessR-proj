@@ -13,7 +13,6 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -51,12 +50,12 @@ public class OnBoardingScreen extends AppCompatActivity {
 
                 ((TextView) view.findViewById(R.id.textmessage)).setTextColor(getResources().getColor(R.color.colorwhite));
                 ((TextView) view.findViewById(R.id.textmessage)).setText(getResources().getString(R.string.dummy_text));
-                ((Button) view.findViewById(R.id.buttonemployee)).setText(getResources().getString(R.string.employee));
-                ((Button) view.findViewById(R.id.buttonintern)).setText(getResources().getString(R.string.intern));
-                ((Button) view.findViewById(R.id.buttonemployerr)).setText(getResources().getString(R.string.employer));
+                ((Button) view.findViewById(R.id.button_jobseeker)).setText(getResources().getString(R.string.Job_Seeker));
+                ((Button) view.findViewById(R.id.button_campus)).setText(getResources().getString(R.string.Campus));
+                ((Button) view.findViewById(R.id.button_recruiter)).setText(getResources().getString(R.string.Recruiter));
                 //((ImageView) view.findViewById(R.id.imageicon)).setImageResource(R.drawable.ic_warning);
                 final AlertDialog alertDialog = builder.create();
-                view.findViewById(R.id.buttonemployee).setOnClickListener(new View.OnClickListener() {
+                view.findViewById(R.id.button_jobseeker).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         alertDialog.dismiss();
@@ -64,7 +63,7 @@ public class OnBoardingScreen extends AppCompatActivity {
                         startActivity(intent);
                     }
                 });
-                view.findViewById(R.id.buttonemployerr).setOnClickListener(new View.OnClickListener() {
+                view.findViewById(R.id.button_recruiter).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         alertDialog.dismiss();
@@ -73,7 +72,7 @@ public class OnBoardingScreen extends AppCompatActivity {
 
                     }
                 });
-                view.findViewById(R.id.buttonintern).setOnClickListener(new View.OnClickListener() {
+                view.findViewById(R.id.button_campus).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         alertDialog.dismiss();
@@ -100,12 +99,12 @@ public class OnBoardingScreen extends AppCompatActivity {
                 builder.setView(view);
                 ((TextView) view.findViewById(R.id.texttitle)).setText(getResources().getString(R.string.success_title));
                 ((TextView) view.findViewById(R.id.textmessage)).setText(getResources().getString(R.string.dummy_text));
-                ((Button) view.findViewById(R.id.buttonemployee)).setText(getResources().getString(R.string.employee));
-                ((Button) view.findViewById(R.id.buttonemployerr)).setText(getResources().getString(R.string.employer));
-                ((Button) view.findViewById(R.id.buttonintern)).setText(getResources().getString(R.string.intern));
+                ((Button) view.findViewById(R.id.button_jobseeker)).setText(getResources().getString(R.string.Job_Seeker));
+                ((Button) view.findViewById(R.id.button_recruiter)).setText(getResources().getString(R.string.Recruiter));
+                ((Button) view.findViewById(R.id.button_campus)).setText(getResources().getString(R.string.Campus));
                 //((ImageView) view.findViewById(R.id.imageicon)).setImageResource(R.drawable.ic_warning);
                 final AlertDialog alertDialog = builder.create();
-                view.findViewById(R.id.buttonemployee).setOnClickListener(new View.OnClickListener() {
+                view.findViewById(R.id.button_jobseeker).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         alertDialog.dismiss();
@@ -113,7 +112,7 @@ public class OnBoardingScreen extends AppCompatActivity {
                         startActivity(intent);
                     }
                 });
-                view.findViewById(R.id.buttonemployerr).setOnClickListener(new View.OnClickListener() {
+                view.findViewById(R.id.button_recruiter).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         alertDialog.dismiss();
@@ -122,7 +121,7 @@ public class OnBoardingScreen extends AppCompatActivity {
 
                     }
                 });
-                view.findViewById(R.id.buttonintern).setOnClickListener(new View.OnClickListener() {
+                view.findViewById(R.id.button_campus).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         alertDialog.dismiss();

@@ -42,6 +42,7 @@
             android:textColor="@color/darkBackground"
             android:textSize="18sp"
             android:textStyle="bold"
+            android:gravity="center"
             app:layout_constraintTop_toTopOf="parent"
             tools:layout_editor_absoluteX="0dp" />
 
@@ -61,7 +62,7 @@
             app:layout_constraintVertical_bias="0.129" />
 
         <Button
-            android:id="@+id/buttonemployerr"
+            android:id="@+id/button_recruiter"
             android:layout_width="109dp"
             android:layout_height="51dp"
             android:layout_marginTop="24dp"
@@ -74,7 +75,7 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <Button
-            android:id="@+id/buttonintern"
+            android:id="@+id/button_campus"
             android:layout_width="106dp"
             android:layout_height="48dp"
             android:layout_marginTop="12dp"
@@ -85,11 +86,11 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.07"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonemployerr"
+            app:layout_constraintTop_toBottomOf="@+id/button_recruiter"
             app:layout_constraintVertical_bias="0.0" />
 
         <Button
-            android:id="@+id/buttonemployee"
+            android:id="@+id/button_jobseeker"
             android:layout_width="105dp"
             android:layout_height="48dp"
             android:layout_marginTop="8dp"
@@ -100,7 +101,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.93"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonemployerr"
+            app:layout_constraintTop_toBottomOf="@+id/button_recruiter"
             app:layout_constraintVertical_bias="0.2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
