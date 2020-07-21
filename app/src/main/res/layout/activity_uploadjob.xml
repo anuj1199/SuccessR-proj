@@ -4,6 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/lightBackground"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    android:paddingTop="15dp"
     tools:context=".uploadjob">
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/gifImageView"
@@ -35,6 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/ic_notifications"
+            android:fontFamily="@font/montserrat_regular"
             android:hint=" Enter the Job Field"
             android:inputType="textPersonName" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -55,6 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/ic_notifications"
+            android:fontFamily="@font/montserrat_regular"
             android:hint=" Last date to apply"
             android:inputType="textPersonName" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -74,6 +80,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/ic_notifications"
+            android:fontFamily="@font/montserrat_regular"
             android:hint=" Qualification"
             android:inputType="textPersonName" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -94,6 +101,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/ic_notifications"
+            android:fontFamily="@font/montserrat_regular"
             android:hint="No of Vacancies"
             android:inputType="textPersonName" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -103,6 +111,8 @@
         android:layout_width="154dp"
         android:layout_height="59dp"
         android:text="Upload Job"
+        android:background="@color/darkBackground"
+        android:textColor="@color/lightBackground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

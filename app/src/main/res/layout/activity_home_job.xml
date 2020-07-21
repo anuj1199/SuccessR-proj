@@ -3,21 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#000"
+    android:background="@color/darkBackground"
     android:layout_height="match_parent"
     tools:context=".HomeActivityJob">
     <EditText
         android:id="@+id/inputSearchjob"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:hint="Search job here..."
+        android:hint="@string/search_job_here"
         android:layout_margin="20dp"
-        android:paddingLeft="20dp"
+        android:paddingStart="20dp"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
-        android:paddingRight="10dp"
-        android:drawableRight="@drawable/search_icon"
-        android:background="@drawable/pin_background">
+        android:paddingEnd="10dp"
+        android:drawableEnd="@drawable/search_icon"
+        android:background="@drawable/pin_background"
+        android:autofillHints="">
     </EditText>
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"

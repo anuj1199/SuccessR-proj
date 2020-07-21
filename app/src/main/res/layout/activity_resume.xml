@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/lightBackground"
     tools:context=".resume">
     <ScrollView
         android:layout_width="match_parent"
@@ -20,7 +21,9 @@
                 android:layout_width="match_parent"
                 android:gravity="center"
                 android:layout_height="56dp"
-                android:text="Build Your Resume" />
+                android:fontFamily="@font/heading"
+                android:textColor="@color/darkBackground"
+                android:text="@string/build_your_resume" />
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="match_parent"
@@ -32,7 +35,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="71dp"
                 android:gravity="center"
-                android:text="Enter Details For Resume" />
+                android:fontFamily="@font/heading"
+                android:textColor="@color/darkBackground"
+                android:text="@string/enter_details_for_resume" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="66dp"
@@ -43,6 +48,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="54dp"
                     android:layout_weight="1"
+                    android:fontFamily="@font/heading"
+                    android:textColor="@color/darkBackground"
                     android:gravity="center"
                     android:text="Name" />
 
@@ -51,6 +58,8 @@
                     android:layout_width="236dp"
                     android:layout_height="55dp"
                     android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/darkBackground"
                     android:gravity="center"
                     android:hint="enter your name" />
             </LinearLayout>
@@ -64,14 +73,18 @@
                     android:layout_width="36dp"
                     android:layout_height="54dp"
                     android:layout_weight="1"
+                    android:fontFamily="@font/heading"
+                    android:textColor="@color/darkBackground"
                     android:gravity="center"
-                    android:text="Phone number" />
+                    android:text="@string/phone_no" />
 
                 <EditText
                     android:id="@+id/phone"
                     android:layout_width="236dp"
                     android:layout_height="55dp"
                     android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/darkBackground"
                     android:gravity="center"
                     android:hint="enter your phone number" />
             </LinearLayout>
@@ -86,13 +99,17 @@
                     android:gravity="center"
                     android:layout_height="54dp"
                     android:layout_weight="1"
-                    android:text="Email" />
+                    android:fontFamily="@font/heading"
+                    android:textColor="@color/darkBackground"
+                    android:text="@string/email" />
 
                 <EditText
                     android:id="@+id/emailp"
                     android:layout_width="236dp"
                     android:layout_height="55dp"
                     android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/darkBackground"
                     android:gravity="center"
                     android:hint="enter your email" />
             </LinearLayout>
@@ -106,14 +123,18 @@
                     android:layout_width="38dp"
                     android:layout_height="54dp"
                     android:gravity="center"
+                    android:fontFamily="@font/heading"
+                    android:textColor="@color/darkBackground"
                     android:layout_weight="1"
-                    android:text="Address" />
+                    android:text="@string/address" />
 
                 <EditText
                     android:id="@+id/addressp"
                     android:layout_width="236dp"
                     android:layout_height="55dp"
                     android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/darkBackground"
                     android:gravity="center"
                     android:hint="enter your address" />
             </LinearLayout>
@@ -127,6 +148,8 @@
                     android:layout_height="54dp"
                     android:gravity="center"
                     android:layout_weight="1"
+                    android:fontFamily="@font/heading"
+                    android:textColor="@color/darkBackground"
                     android:text="Skills" />
 
                 <EditText
@@ -134,6 +157,8 @@
                     android:layout_width="236dp"
                     android:layout_height="55dp"
                     android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/darkBackground"
                     android:gravity="center"
                     android:hint="enter your skills" />
             </LinearLayout>
@@ -147,6 +172,8 @@
                     android:gravity="center"
                     android:layout_height="54dp"
                     android:layout_weight="1"
+                    android:fontFamily="@font/heading"
+                    android:textColor="@color/darkBackground"
                     android:text="Languages" />
 
                 <EditText
@@ -154,6 +181,8 @@
                     android:layout_width="236dp"
                     android:layout_height="55dp"
                     android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/darkBackground"
                     android:gravity="center"
                     android:hint="enter languages you know" />
             </LinearLayout>
@@ -167,6 +196,8 @@
                     android:gravity="center"
                     android:layout_height="54dp"
                     android:layout_weight="1"
+                    android:fontFamily="@font/heading"
+                    android:textColor="@color/darkBackground"
                     android:text="Education (Class 10th)" />
 
                 <EditText
@@ -174,6 +205,8 @@
                     android:layout_width="236dp"
                     android:layout_height="55dp"
                     android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/darkBackground"
                     android:gravity="center"
                     android:hint="enter your cgpa or percentage" />
             </LinearLayout>
@@ -186,6 +219,8 @@
                     android:layout_width="38dp"
                     android:layout_height="54dp"
                     android:layout_weight="1"
+                    android:fontFamily="@font/heading"
+                    android:textColor="@color/darkBackground"
                     android:gravity="center"
                     android:text="Education (Class 10 +2)" />
                 <EditText
@@ -193,6 +228,8 @@
                     android:layout_width="236dp"
                     android:layout_height="55dp"
                     android:gravity="center"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/darkBackground"
                     android:layout_weight="1" />
             </LinearLayout>
             <LinearLayout
@@ -205,13 +242,17 @@
                     android:layout_height="54dp"
                     android:gravity="center"
                     android:layout_weight="1"
+                    android:fontFamily="@font/heading"
+                    android:textColor="@color/darkBackground"
                     android:text="Education (College)" />
                 <EditText
                     android:id="@+id/edu_col"
                     android:layout_width="236dp"
                     android:layout_height="55dp"
                     android:gravity="center"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/darkBackground"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -223,6 +264,8 @@
                     android:gravity="center"
                     android:layout_height="54dp"
                     android:layout_weight="1"
+                    android:fontFamily="@font/heading"
+                    android:textColor="@color/darkBackground"
                     android:text="Project 1 Name" />
                 <EditText
                     android:id="@+id/pro1n"
@@ -241,6 +284,8 @@
                     android:gravity="center"
                     android:layout_height="54dp"
                     android:layout_weight="1"
+                    android:fontFamily="@font/heading"
+                    android:textColor="@color/darkBackground"
                     android:text="Project 1 Description" />
                 <EditText
                     android:id="@+id/pro1d"
@@ -248,6 +293,8 @@
                     android:layout_height="55dp"
                     android:gravity="center"
                     android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/darkBackground"
                     />
             </LinearLayout>
             <LinearLayout
@@ -260,13 +307,17 @@
                     android:layout_height="54dp"
                     android:gravity="center"
                     android:layout_weight="1"
+                    android:fontFamily="@font/heading"
+                    android:textColor="@color/darkBackground"
                     android:text="Project 2 Name" />
                 <EditText
                     android:id="@+id/pro2n"
                     android:layout_width="236dp"
                     android:gravity="center"
                     android:layout_height="55dp"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/darkBackground"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -278,13 +329,17 @@
                     android:gravity="center"
                     android:layout_height="54dp"
                     android:layout_weight="1"
+                    android:fontFamily="@font/heading"
+                    android:textColor="@color/darkBackground"
                     android:text="Project 2 Description" />
                 <EditText
                     android:id="@+id/pro2d"
                     android:layout_width="236dp"
                     android:gravity="center"
                     android:layout_height="55dp"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/darkBackground"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -295,6 +350,8 @@
                     android:layout_width="38dp"
                     android:layout_height="54dp"
                     android:layout_weight="1"
+                    android:fontFamily="@font/heading"
+                    android:textColor="@color/darkBackground"
                     android:gravity="center"
                     android:text="Exprience" />
                 <EditText
@@ -302,7 +359,9 @@
                     android:layout_width="236dp"
                     android:layout_height="55dp"
                     android:gravity="center"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/darkBackground"/>
             </LinearLayout>
             <Button
                 android:id="@+id/button"

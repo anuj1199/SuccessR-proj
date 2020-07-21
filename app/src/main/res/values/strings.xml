@@ -48,4 +48,8 @@
     <string name="Job_Seeker">Job Seeker</string>
     <string name="Recruiter">Recriuter</string>
     <string name="status">Status</string>
+    <string name="search_job_here">Search job here...</string>
+    <string name="build_your_resume">Build Your Resume</string>
+    <string name="enter_details_for_resume">Enter Details For Resume</string>
+    <string name="address">Address</string>
 </resources>

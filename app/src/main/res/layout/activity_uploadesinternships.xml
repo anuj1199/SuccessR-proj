@@ -18,8 +18,8 @@
         android:autofillHints=""
         android:background="@drawable/pin_background"
         android:drawableEnd="@drawable/search_icon"
-        android:fontFamily="@font/aclonica"
-        android:hint="search_intern_by_field"
+        android:fontFamily="@font/heading"
+        android:hint="@string/search_job_here"
         android:paddingStart="20dp"
         android:paddingTop="8dp"
         android:paddingEnd="10dp"
@@ -33,5 +33,5 @@
         android:layout_height="match_parent"
         android:layout_below="@id/inputSearchIntern"
         android:layout_marginTop="0dp"
-        android:fontFamily="@font/aclonica" />
+        android:fontFamily="@font/montserrat_regular" />
 </RelativeLayout>
