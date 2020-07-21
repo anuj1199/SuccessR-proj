@@ -5,13 +5,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     app:layout_constraintCircleRadius="30dp"
-    android:background="#00000000"
+    android:background="@android:color/transparent"
     android:layout_width="match_parent"
     android:layout_height="300dp">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="match_parent">
 
 
         <androidx.cardview.widget.CardView
@@ -105,7 +104,7 @@
                     app:layout_constraintHorizontal_bias="0.529"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.925"></TextView>
+                    app:layout_constraintVertical_bias="0.925" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
